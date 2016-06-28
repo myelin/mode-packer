@@ -5,7 +5,7 @@
       "template_name": "centos-6.6-x86_64",
       "template_os": "RedHat_64",
       
-      "iso_url": "http://osmirror.delivery.puppetlabs.net/iso/CentOS-6.6-x86_64-bin-DVD1.iso",
+      "iso_url": "http://archive.kernel.org/centos-vault/6.6/isos/x86_64/CentOS-6.6-x86_64-bin-DVD1.iso",
       "iso_checksum": "7b1fb1a11499b31271ded79da6af8584",
       "iso_checksum_type": "md5",
 
@@ -30,6 +30,7 @@
       "boot_wait": "10s",
       "disk_size": 20480,
       "guest_os_type": "{{user `template_os`}}",
+      "headless": true,
       "http_directory": "files",
       "iso_checksum": "{{user `iso_checksum`}}",
       "iso_checksum_type": "{{user `iso_checksum_type`}}",
